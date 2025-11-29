@@ -2,13 +2,13 @@
 
 **JogjaLensa** adalah sebuah platform marketplace fotografi berbasis web yang menghubungkan klien (wisudawan, pasangan pengantin, turis) dengan fotografer profesional (vendor) di wilayah Yogyakarta.
 
-Aplikasi ini bertujuan untuk memudahkan pengguna mencari jasa fotografi yang transparan, aman, dan berkualitas, sekaligus membantu fotografer lokal memasarkan jasa mereka dan mengelola pesanan secara profesional.
+Web ini bertujuan untuk memudahkan pengguna mencari jasa fotografi yang transparan, aman, dan berkualitas, sekaligus membantu fotografer lokal memasarkan jasa mereka dan mengelola pesanan secara profesional.
 
 ---
 
 ## 🌟 Fitur Utama
 
-Aplikasi ini membagi hak akses menjadi dua peran utama: **Client (Pengguna)** dan **Vendor (Fotografer)**.
+Web ini membagi hak akses menjadi dua peran utama: **Client (Pengguna)** dan **Vendor (Fotografer)**.
 
 ### 1. Fitur Umum (Landing Page)
 * **Cinematic Experience:** Tampilan beranda dengan latar belakang video dan musik latar (background audio) khas Yogyakarta.
