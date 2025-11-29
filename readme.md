@@ -116,7 +116,7 @@ Ikuti langkah ini untuk menjalankan proyek di komputer Anda menggunakan XAMPP at
 
 **Project Pemrograman Web**
 * **Abdillah Abhi dan Gian Abi Firdaus**
-* Dikembangkan untuk memenuhi tugas pemrograman web dan studi kasus e-commerce jasa.
+* Dikembangkan untuk memenuhi tugas pemrograman web dan studi kasus pariwisata jogja.
 
 ---
 
