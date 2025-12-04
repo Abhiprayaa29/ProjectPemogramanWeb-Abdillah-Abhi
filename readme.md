@@ -1,123 +1,80 @@
-# JogjaLensa 📸
+# 📸 JogjaLensa - Marketplace Fotografi Yogyakarta
 
-**JogjaLensa** adalah sebuah platform marketplace fotografi berbasis web yang menghubungkan klien (wisudawan, pasangan pengantin, turis) dengan fotografer profesional (vendor) di wilayah Yogyakarta.
+![PHP](https://img.shields.io/badge/PHP-8.0%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
-Web ini bertujuan untuk memudahkan pengguna mencari jasa fotografi yang transparan, aman, dan berkualitas, sekaligus membantu fotografer lokal memasarkan jasa mereka dan mengelola pesanan secara profesional.
+> **Project Pemrograman Web (Semester 3)** > Platform marketplace yang menghubungkan fotografer profesional (Vendor) dengan klien di wilayah Yogyakarta untuk keperluan Wisuda, Wedding, Event, dan lainnya.
 
 ---
 
-## 🌟 Fitur Utama
+## 📖 Deskripsi Project
 
-Web ini membagi hak akses menjadi dua peran utama: **Client (Pengguna)** dan **Vendor (Fotografer)**.
+**JogjaLensa** hadir untuk memecahkan masalah sulitnya mencari fotografer yang transparan harga dan kualitasnya di Yogyakarta. Aplikasi ini menyediakan ekosistem lengkap mulai dari pencarian vendor, pemesanan (booking), pembayaran, hingga ulasan (review).
 
-### 1. Fitur Umum (Landing Page)
-* **Cinematic Experience:** Tampilan beranda dengan latar belakang video dan musik latar (background audio) khas Yogyakarta.
-* **Pencarian Canggih:** Mencari fotografer berdasarkan nama, kategori (Wisuda, Wedding, Event, Produk), atau lokasi (Sleman, Bantul, dll).
-* **Filter & Sorting:** Menyaring hasil pencarian dan mengurutkan berdasarkan harga termurah/termahal atau nama (A-Z).
-* **Top Vendor:** Menampilkan rekomendasi vendor termurah dan statistik real-time aplikasi.
+Dibangun menggunakan **PHP Native (Procedural)** yang ringan dan **Bootstrap 5** untuk antarmuka yang modern, responsif, dan *cinematic*.
 
-### 2. Fitur Client (User)
-* **Registrasi & Login:** Pendaftaran akun pengguna.
-* **Booking System:** Memesan jasa foto dengan memilih paket, tanggal, dan waktu sesi.
-* **Manajemen Pesanan:** Melihat riwayat pesanan dan status (Menunggu Konfirmasi, Diproses, Selesai).
-* **Pembayaran:** Mengunggah bukti transfer pembayaran.
-* **Review & Rating:** Memberikan ulasan bintang dan komentar setelah sesi foto selesai.
-* **Pengaturan Profil:** Mengubah foto profil, nama, email, dan kata sandi.
+## ✨ Fitur Unggulan
 
-### 3. Fitur Vendor (Fotografer)
-* **Pendaftaran Mitra:** Formulir khusus untuk mendaftar sebagai vendor.
-* **Vendor Dashboard:** Statistik pendapatan, jumlah proyek selesai, dan rating rata-rata.
-* **Manajemen Paket (CRUD):** Membuat, mengedit, dan menghapus paket harga layanan.
-* **Manajemen Portofolio:** Mengunggah dan menghapus foto hasil karya ke dalam galeri profil.
-* **Manajemen Pesanan:** Menerima atau menolak pesanan masuk, serta menandai pesanan selesai.
-* **Pengaturan Studio:** Mengedit profil bisnis, deskripsi, alat (gear), keahlian (skills), dan akun sosial media.
+### 1. 🌏 Fitur Umum (Landing Page)
+* **Cinematic Hero:** Tampilan awal dengan background video pariwisata Jogja dan audio yang memberikan *immersive experience*.
+* **Advanced Search:** Pencarian vendor berdasarkan Nama, Kategori (Wisuda, Wedding, dll), dan Lokasi (Sleman, Bantul, dll).
+* **Sorting & Filter:** Urutkan hasil pencarian berdasarkan Harga Termurah, Termahal, atau Nama (A-Z).
+* **Statistik Real-time:** Menampilkan jumlah vendor aktif dan transaksi sukses langsung dari database.
+
+### 2. 👤 Fitur Client (User)
+* **Booking System:** Memesan jasa foto dengan memilih paket, tanggal, dan jam secara spesifik.
+* **Dashboard Client:** Memantau status pesanan (Menunggu Konfirmasi, Diproses, Selesai).
+* **Payment Upload:** Mengunggah bukti transfer pembayaran.
+* **Review & Rating:** Memberikan ulasan bintang 1-5 setelah pesanan selesai.
+* **Invoice Digital:** Cetak detail pesanan/invoice secara otomatis.
+
+### 3. 📷 Fitur Vendor (Fotografer)
+* **Mitra Dashboard:** Statistik pendapatan total, jumlah proyek, dan rating rata-rata.
+* **Manajemen Paket:** CRUD (Create, Read, Update, Delete) paket harga layanan.
+* **Portofolio Gallery:** Upload foto hasil karya untuk menarik klien.
+* **Order Management:** Menerima (Accept), Menolak (Reject), atau Menyelesaikan (Complete) pesanan masuk.
+* **Profile Studio:** Pengaturan profil bisnis, alat (gear), keahlian, dan media sosial.
 
 ---
 
 ## 🛠️ Teknologi yang Digunakan
 
-Proyek ini dibangun menggunakan teknologi web standar (Native) tanpa framework backend yang berat, sehingga ringan dan mudah dipelajari.
-
-### Backend
-* **Bahasa:** PHP 8.x (Native / Procedural style).
-* **Database:** MySQL / MariaDB.
-* **Keamanan:**
-    * Password Hashing (`password_hash` & `password_verify`).
-    * SQL Injection Protection (menggunakan `mysqli_real_escape_string`).
-    * Session Management.
-
-### Frontend
-* **HTML5 & CSS3.**
-* **Framework CSS:** Bootstrap 5.3 (Responsif untuk Mobile & Desktop).
-* **Icons:** Bootstrap Icons (`bi-`).
-* **JavaScript:** Vanilla JS & Bootstrap Bundle (untuk Modal, Dropdown, dan logika Audio Player).
-
-### Media
-* **Video Background:** Video MP4 untuk visualisasi hero section.
-* **Audio Player:** Fitur musik latar dengan persistensi status (menyimpan posisi lagu saat pindah halaman).
+| Komponen | Teknologi | Keterangan |
+| :--- | :--- | :--- |
+| **Backend** | PHP 8 (Native) | Menggunakan koneksi `mysqli` prosedural. |
+| **Frontend** | Bootstrap v5.3 | Framework CSS responsive + Icons. |
+| **Database** | MySQL / MariaDB | Relasional database dengan Foreign Keys. |
+| **Media** | HTML5 Video & Audio | Background video loop & fitur musik latar pintar. |
+| **Server** | Apache | Dijalankan via XAMPP / Laragon. |
 
 ---
 
-## 📂 Struktur Database
+## 📂 Struktur Folder Project
 
-Database `db_jogjalensa` terdiri dari tabel-tabel berikut:
-
-1.  **`users`**: Menyimpan data login (email, password, role).
-2.  **`vendors`**: Menyimpan detail profil fotografer (brand name, lokasi, deskripsi, dll) yang berelasi dengan tabel users.
-3.  **`packages`**: Daftar paket harga yang ditawarkan vendor.
-4.  **`bookings`**: Transaksi pemesanan (tanggal, status, total harga).
-5.  **`portofolio`**: Galeri foto yang diunggah vendor.
-6.  **`reviews`**: Ulasan dan rating dari user untuk booking yang selesai.
-7.  **`packages_history`**: Riwayat perubahan paket (log).
-
----
-
-## 🚀 Panduan Instalasi (Localhost)
-
-Ikuti langkah ini untuk menjalankan proyek di komputer Anda menggunakan XAMPP atau Laragon:
-
-1.  **Persiapan Lingkungan:**
-    * Pastikan **XAMPP** atau server lokal sejenis sudah terinstall (Apache & MySQL).
-    * Simpan folder project ini di dalam direktori `htdocs` (misal: `C:\xampp\htdocs\jogjalensa`).
-
-2.  **Setup Database:**
-    * Buka **phpMyAdmin** (`http://localhost/phpmyadmin`).
-    * Buat database baru dengan nama `db_jogjalensa`.
-    * Import file SQL yang ada di folder `sql/` (Gunakan file terbaru: `db_jogjalensa (2).sql`).
-
-3.  **Konfigurasi Koneksi:**
-    * Buka file `includes/koneksi.php`.
-    * Pastikan konfigurasi sesuai dengan server lokal Anda:
-        ```php
-        $host = "localhost";
-        $user = "root";
-        $pass = ""; // Kosongkan jika default XAMPP
-        $name = "db_jogjalensa";
-        ```
-
-4.  **Menjalankan Project:**
-    * Buka browser dan akses: `http://localhost/jogjalensa/`
-
----
-
-## 📝 Alur Booking (How it Works)
-
-1.  **Cari:** User mencari fotografer dan melihat portofolio/paket.
-2.  **Booking:** User memilih paket dan mengisi tanggal/jam (Status awal: `pending`).
-3.  **Konfirmasi:** Vendor menerima pesanan melalui dashboard (Status berubah: `confirmed`).
-4.  **Bayar:** User mengunggah bukti pembayaran.
-5.  **Pelaksanaan:** Sesi foto berlangsung sesuai jadwal.
-6.  **Selesai:** Vendor menandai pesanan selesai (Status akhir: `completed`).
-7.  **Review:** User memberikan rating bintang 1-5.
-
----
-
-## 👤 Author
-
-**Project Pemrograman Web**
-* **Abdillah Abhi dan Gian Abi Firdaus**
-* Dikembangkan untuk memenuhi tugas pemrograman web dan studi kasus pariwisata jogja.
-
----
-
-*Catatan: Pastikan folder `uploads/portofolio/` dan `assets/bukti_transfer/` memiliki izin tulis (write permission) agar fitur upload gambar berfungsi dengan baik.*
+```text
+/JogjaLensa
+│
+├── /assets                 # File statis (CSS, Gambar, Audio, Video)
+│   ├── /audio              # Musik latar
+│   ├── /image              # Gambar kategori & placeholder
+│   └── /video              # Video background landing page
+│
+├── /components             # Potongan layout (Header, Navbar, Footer)
+├── /includes               # Konfigurasi Database (koneksi.php)
+├── /logic                  # Logika Pemrosesan Backend
+│   ├── /auth               # Login, Register, Logout
+│   ├── /logicuser          # Booking, Bayar, Review, Profile
+│   └── /logicvendor        # Paket, Portofolio, Status Order
+│
+├── /sql                    # File backup database (.sql)
+├── /uploads                # Folder penyimpanan file user
+│   ├── /portofolio         # Foto portofolio vendor
+│   └── /bukti_transfer     # Bukti pembayaran user
+│
+├── index.php               # Landing Page Utama
+├── dashboard_user.php      # Halaman User
+├── dashboard_vendor.php    # Halaman Vendor
+├── pencarian.php           # Halaman Search Result
+├── profile.php             # Halaman Detail Vendor
+└── ... (file lainnya)
